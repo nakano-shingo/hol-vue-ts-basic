@@ -16,7 +16,7 @@
    ? Choose the locale you want to load: ja
    ```
 
-1. Element のインストール後、全体のレイアウトを調整するために `App.vue` を以下のように書き換えて下さい。( `<script>` タグは不要です)
+1. Element のインストール後、全体のレイアウトを調整するために `src/App.vue` を以下のように書き換えて下さい。( `<script>` タグは不要です)
 
    ```html
    <template>
@@ -53,9 +53,9 @@
 
 ## Exercise 2: テーブル画面の追加
 
-1. `views` ディレクトリ配下に `Table.vue` ファイルを新規に追加します。この時点ではファイルの中身は何も実装しなくて構いません。
+1. `src/views` ディレクトリ配下に `Table.vue` ファイルを新規に追加します。この時点ではファイルの中身は何も実装しなくて構いません。
 
-1. 次に、 [Vue Router](https://router.vuejs.org/ja/) の機能を使って、テーブル画面に遷移できるように `router.ts` を以下のように編集します。
+1. 次に、 [Vue Router](https://router.vuejs.org/ja/) の機能を使って、テーブル画面に遷移できるように `src/router.ts` を以下のように編集します。
 
    ```ts
    // （途中省略）
@@ -79,7 +79,7 @@
    });
    ```
 
-1. 画面左のメニューにテーブル画面へのリンクが表示されるよう `App.vue` に以下を追加します。
+1. 画面左のメニューにテーブル画面へのリンクが表示されるよう `src/App.vue` に以下を追加します。
 
    ```html
    <el-menu-item>
@@ -91,7 +91,7 @@
 
 ## Exercise 3: Element の Table コンポーネント を使ったテーブルの実装
 
-1. テーブルのデータとなるオブジェクトを TypeScript 側に実装するため、 `Table.vue` を開き、 `<script>` タグを以下のように実装します。
+1. テーブルのデータとなるオブジェクトを TypeScript 側に実装するため、 `src/views/Table.vue` を開き、 `<script>` タグを以下のように実装します。
 
    ```ts
    <script lang="ts">
